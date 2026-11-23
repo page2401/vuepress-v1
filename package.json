@@ -1,0 +1,17 @@
+{
+  "name": "@page2401/vuepress-v1",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SSG Benchmark Submodule — VuePress v1 (1.9.10 · Classic Vue 2 + Webpack 4)",
+  "scripts": {
+    "predev": "node scripts/copy-vendor.js",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev docs",
+    "prebuild": "node scripts/copy-vendor.js",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build docs"
+  },
+  "dependencies": {
+    "katex": "0.19.1",
+    "mermaid": "10.9.8",
+    "vuepress": "1.9.10"
+  }
+}
