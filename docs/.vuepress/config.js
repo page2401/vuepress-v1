@@ -101,7 +101,8 @@ module.exports = {
       { text: '01. 标注', link: '/01-annotations.html' },
       { text: '02. 流程图', link: '/02-diagrams.html' },
       { text: '03. 公式', link: '/03-math.html' },
-      { text: '04. 目录结构', link: '/04-directory/' }
+      { text: '04. 目录结构', link: '/04-directory/' },
+      { text: '05. 代码高亮', link: '/05-code-blocks.html' }
     ],
     sidebar: [
       {
@@ -120,7 +121,8 @@ module.exports = {
               ['/04-directory/nested/01-auto-components', 'A. .vuepress/components 自动全局注册'],
               ['/04-directory/nested/02-legacy-webpack4', 'B. Webpack 4 与 OpenSSL 3 时代包袱']
             ]
-          }
+          },
+          ['/05-code-blocks', '05. 高阶代码块与语法高亮']
         ]
       }
     ]
