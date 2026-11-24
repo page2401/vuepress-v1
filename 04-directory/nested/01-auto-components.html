@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>嵌套实测 A：components 目录自动全局注册 | VuePress v1 (1.9.10)</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="stylesheet" href="vendor/katex.min.css">
+    <script src="vendor/mermaid.min.js"></script>
+    <meta name="description" content="SSG 多版本实测基准子站 — 经典 VuePress 1.9.10 (Vue 2 + Webpack 4)">
+    
+    <link rel="preload" href="/vuepress-v1/assets/css/0.styles.0a72e68c.css" as="style"><link rel="preload" href="/vuepress-v1/assets/js/app.64ebde67.js" as="script"><link rel="preload" href="/vuepress-v1/assets/js/2.83ea2fee.js" as="script"><link rel="preload" href="/vuepress-v1/assets/js/1.cde7ca4d.js" as="script"><link rel="preload" href="/vuepress-v1/assets/js/27.65249e49.js" as="script"><link rel="prefetch" href="/vuepress-v1/assets/js/10.65c89582.js"><link rel="prefetch" href="/vuepress-v1/assets/js/11.95cb18c7.js"><link rel="prefetch" href="/vuepress-v1/assets/js/12.06ef0297.js"><link rel="prefetch" href="/vuepress-v1/assets/js/13.b61eade9.js"><link rel="prefetch" href="/vuepress-v1/assets/js/14.1cf94975.js"><link rel="prefetch" href="/vuepress-v1/assets/js/15.c92be3cf.js"><link rel="prefetch" href="/vuepress-v1/assets/js/16.42830708.js"><link rel="prefetch" href="/vuepress-v1/assets/js/17.dca03f49.js"><link rel="prefetch" href="/vuepress-v1/assets/js/18.0bc9d983.js"><link rel="prefetch" href="/vuepress-v1/assets/js/19.76a90512.js"><link rel="prefetch" href="/vuepress-v1/assets/js/20.7a212fbf.js"><link rel="prefetch" href="/vuepress-v1/assets/js/21.5b50fd8a.js"><link rel="prefetch" href="/vuepress-v1/assets/js/22.9d147036.js"><link rel="prefetch" href="/vuepress-v1/assets/js/23.a7ddee92.js"><link rel="prefetch" href="/vuepress-v1/assets/js/24.289cd427.js"><link rel="prefetch" href="/vuepress-v1/assets/js/25.1125ec71.js"><link rel="prefetch" href="/vuepress-v1/assets/js/26.f23cc84e.js"><link rel="prefetch" href="/vuepress-v1/assets/js/28.1d8835a4.js"><link rel="prefetch" href="/vuepress-v1/assets/js/29.326acf17.js"><link rel="prefetch" href="/vuepress-v1/assets/js/3.955a7493.js"><link rel="prefetch" href="/vuepress-v1/assets/js/30.b3c8b65e.js"><link rel="prefetch" href="/vuepress-v1/assets/js/4.e70b24e0.js"><link rel="prefetch" href="/vuepress-v1/assets/js/5.ebc9df9d.js"><link rel="prefetch" href="/vuepress-v1/assets/js/6.03b2eaae.js"><link rel="prefetch" href="/vuepress-v1/assets/js/7.b9a1f940.js"><link rel="prefetch" href="/vuepress-v1/assets/js/vendors~docsearch.4b4ba1d8.js">
+    <link rel="stylesheet" href="/vuepress-v1/assets/css/0.styles.0a72e68c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress-v1/" class="home-link router-link-active"><!----> <span class="site-name">VuePress v1 (1.9.10)</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://page.2401.xyz/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ← 返回对比总站
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/vuepress-v1/01-annotations.html" class="nav-link">
+  01. 标注
+</a></div><div class="nav-item"><a href="/vuepress-v1/02-diagrams.html" class="nav-link">
+  02. 流程图
+</a></div><div class="nav-item"><a href="/vuepress-v1/03-math.html" class="nav-link">
+  03. 公式
+</a></div><div class="nav-item"><a href="/vuepress-v1/04-directory/" class="nav-link router-link-active">
+  04. 目录结构
+</a></div><div class="nav-item"><a href="/vuepress-v1/05-code-blocks.html" class="nav-link">
+  05. 代码高亮
+</a></div> <a href="https://github.com/page2401/vuepress-v1" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://page.2401.xyz/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  ← 返回对比总站
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/vuepress-v1/01-annotations.html" class="nav-link">
+  01. 标注
+</a></div><div class="nav-item"><a href="/vuepress-v1/02-diagrams.html" class="nav-link">
+  02. 流程图
+</a></div><div class="nav-item"><a href="/vuepress-v1/03-math.html" class="nav-link">
+  03. 公式
+</a></div><div class="nav-item"><a href="/vuepress-v1/04-directory/" class="nav-link router-link-active">
+  04. 目录结构
+</a></div><div class="nav-item"><a href="/vuepress-v1/05-code-blocks.html" class="nav-link">
+  05. 代码高亮
+</a></div> <a href="https://github.com/page2401/vuepress-v1" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>VuePress v1 基准套件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress-v1/" aria-current="page" class="sidebar-link">00. 版本与基准概览</a></li><li><a href="/vuepress-v1/01-annotations.html" class="sidebar-link">01. 专属标注与元数据</a></li><li><a href="/vuepress-v1/02-diagrams.html" class="sidebar-link">02. 流程图与时序图</a></li><li><a href="/vuepress-v1/03-math.html" class="sidebar-link">03. 数学公式排版</a></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading open"><span>04. 目录结构与路由取舍</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress-v1/04-directory/" aria-current="page" class="sidebar-link">经典 components 自动注册与目录约定</a></li><li><a href="/vuepress-v1/04-directory/nested/01-auto-components.html" aria-current="page" class="active sidebar-link">A. .vuepress/components 自动全局注册</a></li><li><a href="/vuepress-v1/04-directory/nested/02-legacy-webpack4.html" class="sidebar-link">B. Webpack 4 与 OpenSSL 3 时代包袱</a></li></ul></section></li><li><a href="/vuepress-v1/05-code-blocks.html" class="sidebar-link">05. 高阶代码块与语法高亮</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="嵌套实测-a-vuepress-components-自动全局注册"><a href="#嵌套实测-a-vuepress-components-自动全局注册" class="header-anchor">#</a> 嵌套实测 A：<code>.vuepress/components/</code> 自动全局注册</h1> <p>在对比工作台切换到 <strong>「工程目录树对比」</strong> 可以看到 <code>docs/.vuepress/components/MermaidLegacy.vue</code>——无需编写 <code>enhanceApp.js</code>，约定大于配置。但当组件数量增多后，很难追踪某个全局标签究竟来自插件还是本地目录。</p> <ul><li><a href="/vuepress-v1/04-directory/" class="router-link-active">返回《04. 目录结构与路由取舍》</a></li> <li><a href="/vuepress-v1/04-directory/nested/02-legacy-webpack4.html">下一篇：《嵌套实测 B：Webpack 4 与 OpenSSL 3 时代包袱》</a></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vuepress-v1/04-directory/" class="prev router-link-active">
+        经典 components 自动注册与目录约定
+      </a></span> <span class="next"><a href="/vuepress-v1/04-directory/nested/02-legacy-webpack4.html">
+        B. Webpack 4 与 OpenSSL 3 时代包袱
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress-v1/assets/js/app.64ebde67.js" defer></script><script src="/vuepress-v1/assets/js/2.83ea2fee.js" defer></script><script src="/vuepress-v1/assets/js/1.cde7ca4d.js" defer></script><script src="/vuepress-v1/assets/js/27.65249e49.js" defer></script>
+  </body>
+</html>
